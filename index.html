@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b14">
+  <title>SP GAME HUB | Play. Create. Connect.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow glow-one"></div><div class="bg-glow glow-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SP Game Hub home">
+      <span class="brand-mark">SP</span><span>SP <b>GAME HUB</b></span>
+    </a>
+    <nav class="main-nav">
+      <a class="active" href="#discover">Discover</a>
+      <a href="#categories">Categories</a>
+      <a href="#creators">Creators</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">☼</button>
+      <button class="btn btn-outline" id="loginBtn">Log in</button>
+      <button class="btn btn-primary" id="signupBtn">Sign up</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="discover">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT WORLD STARTS HERE</div>
+        <h1>PLAY MORE.<br><span>IMAGINE BIGGER.</span></h1>
+        <p>Discover games made by creators everywhere. Find your next adventure, explore new worlds and share what you build.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary btn-large" href="#games">Explore games <span>↗</span></a>
+          <a class="btn btn-glass btn-large" href="#creators">Become a creator</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>2D + 3D</strong><small>Game worlds</small></div>
+          <div><strong>Creator-first</strong><small>Community vision</small></div>
+          <div><strong>Browser</strong><small>Play online</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative game world illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="planet"><div class="planet-ring"></div><div class="planet-shine"></div></div>
+        <div class="float-card card-top"><span>✦</span><div><b>NEW WORLDS</b><small>Waiting to be explored</small></div></div>
+        <div class="float-card card-bottom"><span>🎮</span><div><b>YOUR NEXT GAME</b><small>Is one click away</small></div></div>
+        <div class="tiny-star star-a">✦</div><div class="tiny-star star-b">✧</div><div class="tiny-star star-c">✦</div>
+      </div>
+    </section>
+
+    <section class="quick-row" aria-label="Platform highlights">
+      <div><span class="quick-icon">🌍</span><span><b>Explore</b><small>Discover new games</small></span></div>
+      <div><span class="quick-icon">🧩</span><span><b>All kinds of games</b><small>2D and 3D experiences</small></span></div>
+      <div><span class="quick-icon">🚀</span><span><b>Create</b><small>Share your imagination</small></span></div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-heading">
+        <div><div class="eyebrow">FIND YOUR NEXT ADVENTURE</div><h2>Discover games</h2><p>Explore the community's worlds.</p></div>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search games..." aria-label="Search games"></div>
+      </div>
+      <div class="filter-row" id="categories">
+        <div class="filters">
+          <button class="filter active" data-filter="all">All games</button>
+          <button class="filter" data-filter="2d">2D</button>
+          <button class="filter" data-filter="3d">3D</button>
+          <button class="filter" data-filter="adventure">Adventure</button>
+          <button class="filter" data-filter="arcade">Arcade</button>
+        </div>
+        <span class="results-count" id="resultsCount">6 games</span>
+      </div>
+      <div class="game-grid" id="gameGrid">
+        <article class="game-card" data-title="Neon Drift" data-type="3d" data-category="arcade" data-description="Race through a glowing futuristic city in this fast-paced driving challenge." data-color="neon">
+          <div class="game-cover cover-neon"><span class="cover-tag">3D • ARCADE</span><div class="cover-art">🏎️</div><span class="cover-caption">NEON<br>DRIFT</span></div>
+          <div class="game-info"><div><h3>Neon Drift</h3><p>by SP Demo Studio</p></div><span class="game-rating">★ 4.8</span></div>
+          <button class="play-btn" data-play>View game <span>↗</span></button>
+        </article>
+        <article class="game-card" data-title="Pixel Quest" data-type="2d" data-category="adventure" data-description="Explore a pixel-art kingdom, discover secrets and complete a tiny hero's quest." data-color="pixel">
+          <div class="game-cover cover-pixel"><span class="cover-tag">2D • ADVENTURE</span><div class="cover-art">🗡️</div><span class="cover-caption">PIXEL<br>QUEST</span></div>
+          <div class="game-info"><div><h3>Pixel Quest</h3><p>by Indie Creator</p></div><span class="game-rating">★ 4.7</span></div>
+          <button class="play-btn" data-play>View game <span>↗</span></button>
+        </article>
+        <article class="game-card" data-title="Sky Islands" data-type="3d" data-category="adventure" data-description="Travel between floating islands and uncover a peaceful world above the clouds." data-color="sky">
+          <div class="game-cover cover-sky"><span class="cover-tag">3D • ADVENTURE</span><div class="cover-art">🏝️</div><span class="cover-caption">SKY<br>ISLANDS</span></div>
+          <div class="game-info"><div><h3>Sky Islands</h3><p>by CloudWorks</p></div><span class="game-rating">★ 4.9</span></div>
+          <button class="play-btn" data-play>View game <span>↗</span></button>
+        </article>
+        <article class="game-card" data-title="Astro Blaster" data-type="2d" data-category="arcade" data-description="A classic-style space arcade demo. Dodge obstacles and aim for a new high score." data-color="astro">
+          <div class="game-cover cover-astro"><span class="cover-tag">2D • ARCADE</span><div class="cover-art">👾</div><span class="cover-caption">ASTRO<br>BLASTER</span></div>
+          <div class="game-info"><div><h3>Astro Blaster</h3><p>by PixelForge</p></div><span class="game-rating">★ 4.6</span></div>
+          <button class="play-btn" data-play>View game <span>↗</span></button>
+        </article>
+        <article class="game-card" data-title="Mystic Forest" data-type="3d" data-category="adventure" data-description="Wander through a magical forest filled with glowing plants and hidden paths." data-color="forest">
+          <div class="game-cover cover-forest"><span class="cover-tag">3D • ADVENTURE</span><div class="cover-art">🌲</div><span class="cover-caption">MYSTIC<br>FOREST</span></div>
+          <div class="game-info"><div><h3>Mystic Forest</h3><p>by GreenPixel</p></div><span class="game-rating">★ 4.8</span></div>
+          <button class="play-btn" data-play>View game <span>↗</span></button>
+        </article>
+        <article class="game-card" data-title="Block Builder" data-type="2d" data-category="arcade" data-description="A small creative building demo. Arrange colorful blocks and make your own pattern." data-color="block">
+          <div class="game-cover cover-block"><span class="cover-tag">2D • CREATIVE</span><div class="cover-art">🧱</div><span class="cover-caption">BLOCK<br>BUILDER</span></div>
+          <div class="game-info"><div><h3>Block Builder</h3><p>by BuildLab</p></div><span class="game-rating">★ 4.5</span></div>
+          <button class="play-btn" data-play>View game <span>↗</span></button>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden><div>🔎</div><h3>No games found</h3><p>Try another search or category.</p></div>
+    </section>
+
+    <section class="creator-banner" id="creators">
+      <div class="creator-symbol">✧</div><div class="creator-copy"><div class="eyebrow">MADE FOR CREATORS</div><h2>Have a game idea?</h2><p>SP GAME HUB is being built for creators. Get ready to share your games with players around the world.</p></div>
+      <button class="btn btn-primary btn-large" id="uploadBtn">Open creator studio <span>↗</span></button>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">SP</span><span>SP <b>GAME HUB</b></span></a><p>Play. Create. Connect.</p><small>© <span id="year"></span> SP GAME HUB. Community platform prototype.</small></footer>
+
+  <div class="modal-backdrop" id="gameModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-btn" data-close aria-label="Close">×</button><div class="modal-emoji" id="modalEmoji">🎮</div>
+      <div class="eyebrow">GAME PREVIEW</div><h2 id="modalTitle">Game title</h2><p id="modalDescription"></p>
+      <div class="notice">This is a Stage 1 preview. A playable game will be connected in a later stage.</div>
+      <button class="btn btn-primary btn-large modal-ok" data-close>Got it</button>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="uploadModal" hidden>
+    <section class="modal upload-modal" role="dialog" aria-modal="true" aria-labelledby="uploadTitle">
+      <button class="close-btn" data-close aria-label="Close">×</button>
+      <div class="eyebrow">CREATOR STUDIO • PREVIEW</div><h2 id="uploadTitle">Share your game</h2>
+      <p>The creator dashboard is a prototype. Public uploads will be enabled after we connect secure accounts and cloud storage.</p>
+      <label class="field-label" for="gameName">Game name</label><input class="form-field" id="gameName" placeholder="Enter your game name">
+      <label class="field-label" for="gameType">Game type</label><select class="form-field" id="gameType"><option>2D</option><option>3D</option></select>
+      <label class="field-label" for="gameFile">Choose a game ZIP (local preview only)</label><input class="form-field file-field" id="gameFile" type="file" accept=".zip">
+      <p class="file-note" id="fileNote">No file selected.</p>
+      <button class="btn btn-primary btn-large modal-ok" id="demoUpload">Check upload details</button>
+      <p class="form-message" id="uploadMessage" role="status"></p>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
